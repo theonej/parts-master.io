@@ -254,6 +254,68 @@ footer p {
   font-size: 1rem;
 }
 
+/* Markdown blockquotes render as callouts. */
+.prose blockquote {
+  margin: 1.75rem 0;
+  padding: 1.125rem 1.25rem;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 0.5rem;
+}
+
+.prose blockquote p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.prose blockquote p + p {
+  margin-top: 0.75rem;
+}
+
+.pending {
+  margin: 1.5rem 0 0;
+  font-size: 0.9375rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+/* ---------- previous / next ---------- */
+
+.post-nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 1rem;
+  margin-top: clamp(2.5rem, 7vw, 4rem);
+}
+
+.post-nav a {
+  display: block;
+  padding: 1.125rem 1.25rem;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 550;
+  line-height: 1.35;
+  transition: border-color 0.15s ease;
+}
+
+.post-nav a:hover,
+.post-nav a:focus-visible {
+  border-color: var(--accent);
+}
+
+.post-nav .meta {
+  display: block;
+  margin-bottom: 0.375rem;
+}
+
+.post-nav .next {
+  text-align: right;
+}
+
 /* Wide tables scroll inside their own box; the page never scrolls sideways. */
 .table-scroll {
   overflow-x: auto;

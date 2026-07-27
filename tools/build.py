@@ -70,7 +70,13 @@ def parse_post(path: Path) -> dict:
         if ":" not in line:
             fail(f"{path.name}: front matter line is not 'key: value': {line!r}")
         key, value = line.split(":", 1)
-        meta[key.strip().lower()] = value.strip()
+        value = value.strip()
+        # Titles containing a colon are often quoted out of YAML habit. Front
+        # matter here is parsed on the first colon only, so the quotes would
+        # otherwise render literally.
+        if len(value) >= 2 and value[0] == value[-1] and value[0] in "\"'":
+            value = value[1:-1].strip()
+        meta[key.strip().lower()] = value
 
     for required in ("title", "date", "description"):
         if not meta.get(required):
@@ -100,6 +106,9 @@ def parse_post(path: Path) -> dict:
         "description": meta["description"],
         "body": body,
         "minutes": max(1, math.ceil(words / WORDS_PER_MINUTE)),
+        # Scaffolded posts carry draft: true so an unwritten stub can never be
+        # published by the daily cron just because its date arrived.
+        "draft": meta.get("draft", "").lower() in ("true", "yes", "1"),
     }
 
 
@@ -124,6 +133,57 @@ def load_posts() -> list[dict]:
         by_date[post["date"]] = post["title"]
 
     return posts
+
+
+def report_coverage(posts: list[dict], today: dt.date) -> None:
+    """Compare the editorial calendar against posts that actually exist.
+
+    The calendar is a planning document, not an input to the build — a dated row
+    with no written post simply means no post that day. This prints what is
+    missing so the gap is visible rather than discovered on the morning.
+    """
+    calendar = ROOT / "content" / "calendar.tsv"
+    if not calendar.exists():
+        return
+
+    scheduled: dict[dt.date, str] = {}
+    for line in calendar.read_text(encoding="utf-8").splitlines()[1:]:
+        if not line.strip():
+            continue
+        fields = line.split("\t")
+        if len(fields) < 4:
+            continue
+        try:
+            scheduled[dt.date.fromisoformat(fields[0])] = fields[3]
+        except ValueError:
+            continue
+
+    if not scheduled:
+        return
+
+    have = {p["date"] for p in posts if not p["draft"]}
+    missing = sorted(d for d in scheduled if d not in have)
+    if not missing:
+        print(f"build: calendar fully written ({len(scheduled)} entries)")
+        return
+
+    overdue = [d for d in missing if d <= today]
+    horizon = today + dt.timedelta(days=14)
+    imminent = [d for d in missing if today < d <= horizon]
+
+    print(
+        f"build: calendar {len(scheduled) - len(missing)}/{len(scheduled)} written, "
+        f"{len(missing)} unwritten"
+    )
+    if overdue:
+        print(
+            f"build: WARNING {len(overdue)} calendar date(s) already passed with no "
+            f"post — earliest {overdue[0]} {scheduled[overdue[0]]!r}"
+        )
+    if imminent:
+        print(f"build: next 14 days needs {len(imminent)} post(s):")
+        for d in imminent:
+            print(f"build:   {d}  {scheduled[d]}")
 
 
 def fmt_date(date: dt.date) -> str:
@@ -267,8 +327,13 @@ def main() -> None:
     # Newest first, and stable for same-day posts.
     posts.sort(key=lambda p: (p["date"], p["slug"]), reverse=True)
 
-    published = posts if publish_all else [p for p in posts if p["date"] <= today]
-    pending = len(posts) - len(published)
+    drafts = [p for p in posts if p["draft"]]
+    finished = [p for p in posts if not p["draft"]]
+
+    published = (
+        finished if publish_all else [p for p in finished if p["date"] <= today]
+    )
+    pending = len(finished) - len(published)
 
     if not published:
         fail(f"no posts are published as of {today} — nothing to deploy")
@@ -294,11 +359,13 @@ def main() -> None:
     for message in warnings:
         print(f"build: warning: {message}")
     print(
-        f"build: {len(published)} published, {pending} scheduled "
+        f"build: {len(published)} published, {pending} scheduled"
+        f"{f', {len(drafts)} draft' if drafts else ''} "
         f"(as of {today}{' — PUBLISH_ALL' if publish_all else ''})"
     )
     if published:
         print(f"build: newest is {published[0]['date']} {published[0]['title']!r}")
+    report_coverage(posts, today)
 
 
 if __name__ == "__main__":

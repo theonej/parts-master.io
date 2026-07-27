@@ -1,0 +1,334 @@
+date	tag	slug	title	angle
+2026-08-28	Operations	handover-documentation	The Handover File You Leave Behind	What documents the client actually needs, and why the baseline is the valuable part.
+2026-08-29	Operations	training-a-team-to-run-the-machine	Training a Team to Run the Machine	Not barista training. Escalation rules, daily routine, and what staff must never do.
+2026-08-30	Operations	reading-an-installation-manual	Reading a Manufacturer's Installation Manual Properly	Where the real constraints hide, and which figures are non-negotiable.
+2026-08-31	Operations	distributor-and-parts-relationships	Distributors and Parts Supply	Lead times, obsolescence, and why the relationship is a technical asset.
+2026-09-01	Water	reading-a-municipal-water-report	Reading a Municipal Water Report	It is an annual average taken upstream of your building. What it can and cannot tell you.
+2026-09-02	Water	taking-a-water-sample-properly	How to Take a Water Sample Properly	Flush time, container, timing and labelling. A bad sample is worse than none.
+2026-09-03	Water	titration-strips-and-meters	Titration, Strips and Meters: What Each Measures	Why a drop test beats a pen for the number that matters.
+2026-09-04	Water	hardness-versus-alkalinity	Total Hardness, Calcium Hardness and Alkalinity	Three numbers routinely conflated, with different consequences.
+2026-09-05	Water	how-scale-actually-forms	Carbonate Chemistry: How Scale Actually Forms	Bicarbonate decomposition, and why the hottest surface always loses.
+2026-09-06	Water	saturation-indices-in-practice	Saturation Indices in Practice	Langelier and friends: useful framing, limited field tool.
+2026-09-07	Water	chloride-and-pitting-corrosion	Chloride and Pitting Corrosion	The ion nobody tests, and the failure it causes in stainless.
+2026-09-08	Water	sulphate-silica-and-minor-ions	Sulphate, Silica and the Minor Ions	What else is in there, and when it matters.
+2026-09-09	Water	chlorine-versus-chloramine	Chlorine versus Chloramine	Different problems, different media, different contact times.
+2026-09-10	Water	carbon-media-and-contact-time	Carbon Media and Contact Time	Granular, catalytic and block: sizing for removal rather than hope.
+2026-09-11	Water	sediment-prefiltration	Sediment Prefiltration and Micron Ratings	Protecting everything downstream, including the pump.
+2026-09-12	Water	ion-exchange-softeners	Ion Exchange Softeners: Why Not for Espresso	They stop scale and ruin the coffee. The chemistry of why.
+2026-09-13	Water	weak-acid-cation-cartridges	Weak Acid Cation Cartridges Explained	How WAC resin removes alkalinity rather than trading it for sodium.
+2026-09-14	Water	dealkalisation-options-compared	Dealkalisation Options Compared	WAC, RO, blending and dosing, with costs and failure modes.
+2026-09-15	Water	reverse-osmosis-fundamentals	Reverse Osmosis: Membranes, Recovery and Reject	What an RO plant actually does, and what it wastes.
+2026-09-16	Water	ro-blending-valves	RO Blending Valves: Setting and Verifying	The valve everyone sets once and never checks.
+2026-09-17	Water	remineralisation-methods	Remineralisation: Cartridges versus Dosing	Rebuilding water you deliberately stripped.
+2026-09-18	Water	sizing-a-filter-for-peak-flow	Sizing a Filter for Peak Flow	Capacity and flow rate are different specifications.
+2026-09-19	Water	calculating-cartridge-life	Calculating Cartridge Life from Real Volume	Litres, not months. How to get the number.
+2026-09-20	Water	fitting-and-reading-a-water-meter	Fitting and Reading a Water Meter	The cheapest instrument that ends an argument.
+2026-09-21	Water	what-bypass-settings-do	What Bypass Settings Actually Do	Blending untreated water back in, and how to verify the result.
+2026-09-22	Water	filter-head-plumbing	Filter Head Plumbing and Service Clearance	If the cartridge cannot be changed easily, it will not be changed.
+2026-09-23	Water	flushing-a-new-cartridge	Flushing a New Cartridge Properly	Why the run-in volume exists and what happens if you skip it.
+2026-09-24	Water	backflow-prevention-types	Backflow Prevention Types and Code	Devices, requirements, and the inspection that finds them.
+2026-09-25	Water	thermal-expansion-and-vessels	Thermal Expansion and Expansion Vessels	Closing a system with a check valve, and the pressure spike that follows.
+2026-09-26	Water	pressure-regulation-and-gauges	Pressure Regulation and Gauges	Setting inlet pressure, and reading it without pulling a panel.
+2026-09-27	Water	water-hammer-causes-and-cures	Water Hammer: Causes and Cures	Fast-closing solenoids, long runs, and how to stop the banging.
+2026-09-28	Water	seasonal-water-variation	Seasonal Water Variation and Re-testing	Supplies drift. Blended sources drift further.
+2026-09-29	Water	one-supply-two-targets	One Supply, Two Targets: Espresso and Filter	When to split treatment, and when not to bother.
+2026-09-30	Water	building-a-water-log	Building a Water Log	The record that wins a warranty claim.
+2026-10-01	Brew Path	group-head-anatomy	Group Head Anatomy	Every component in the brew path, and what each one does.
+2026-10-02	Brew Path	saturated-groups	Saturated Groups	Group as part of the boiler: stability, mass and consequences.
+2026-10-03	Brew Path	e61-thermosyphon-groups	E61 and Thermosyphon Groups	Circulation, thermal mass, and why warm-up takes so long.
+2026-10-04	Brew Path	semi-saturated-designs	Semi-Saturated Designs	The middle ground, and what it compromises.
+2026-10-05	Brew Path	three-way-solenoid-valves	Three-Way Solenoid Valves	The component backflushing protects, and how it fails.
+2026-10-06	Brew Path	solenoid-coils-testing	Solenoid Coils: Testing and Replacement	Resistance, heat, and diagnosing a coil from a valve.
+2026-10-07	Brew Path	inlet-solenoids-and-debris	Inlet Solenoids and Debris	Small seats, hard water, and fragments from upstream work.
+2026-10-08	Brew Path	gicleur-sizing	Gicleur Sizing and Selection	Choosing an orifice, and why changing it changes the machine.
+2026-10-09	Brew Path	dispersion-blocks-in-depth	Dispersion Blocks in Depth	Internal passages, erosion, and the scale inspection nobody does.
+2026-10-10	Brew Path	dispersion-screens-types	Dispersion Screens: Types and Wear	Mesh, plate and precision screens compared.
+2026-10-11	Brew Path	group-gasket-materials	Group Gasket Materials and Thickness	Rubber compounds, thickness options, and what each changes.
+2026-10-12	Brew Path	portafilter-construction	Portafilter Construction, Lugs and Springs	The parts that wear and the intermittent faults they cause.
+2026-10-13	Brew Path	basket-hole-geometry	Basket Hole Geometry and Flow	How hole count, size and pattern set resistance.
+2026-10-14	Brew Path	precision-baskets	Precision Baskets: What You Actually Gain	Tolerance claims, measured against real extraction differences.
+2026-10-15	Brew Path	puck-screens-tradeoffs	Puck Screens and Their Tradeoffs	Genuine benefit, and the hardware fault they can mask.
+2026-10-16	Brew Path	preinfusion-mechanisms	Preinfusion: Line Pressure, Mechanical and Pump	Three ways to wet a puck gently, with different hardware.
+2026-10-17	Brew Path	paddle-valve-service	Paddle Valve Service	Seals, seats and the feel that tells you it is worn.
+2026-10-18	Brew Path	flow-control-devices	Flow Control Devices	Needle valves on the group, and what they do to a shot.
+2026-10-19	Brew Path	pressure-profiling-hardware	Pressure Profiling Hardware	Motor-driven pumps and valve control, and the parts count.
+2026-10-20	Brew Path	lever-groups-pistons-and-seals	Lever Groups: Pistons and Seals	Seal life on a shot-count schedule, and gradual degradation.
+2026-10-21	Brew Path	brew-ratio-hardware-dependencies	Brew Ratio and Its Hardware Dependencies	Why a recipe does not transfer between machines.
+2026-10-22	Brew Path	backflush-chemistry	Backflush Chemistry	What the detergent is, what it attacks, and correct dosing.
+2026-10-23	Brew Path	group-temperature-measurement	Group Temperature Measurement	Scace devices, thermofilters, and establishing the offset.
+2026-10-24	Brew Path	thermosyphon-balancing	Thermosyphon Restrictors and Balancing	Getting every group to the same temperature.
+2026-10-25	Brew Path	group-insulation-and-heat-loss	Group Insulation and Heat Loss	Where the heat goes, and what insulating actually buys.
+2026-10-26	Brew Path	brew-path-scale-inspection	Brew Path Scale Inspection	Using accessible components to assess a boiler you cannot see.
+2026-10-27	Brew Path	water-distribution-design	Water Distribution and Shower Design	How water reaches the puck, and why evenness is a design problem.
+2026-10-28	Brew Path	group-cleaning-deep-dive	Group Cleaning: A Deep Dive	Every removable part, the right chemical, and the right interval.
+2026-10-29	Brew Path	diagnosing-a-slow-group	Diagnosing a Slow Group, Systematically	An ordered procedure from cheapest check to most invasive.
+2026-10-30	Brew Path	diagnosing-a-leaking-group	Diagnosing a Leaking Group, Systematically	Locating a leak by when and where it appears.
+2026-10-31	Brew Path	rebuilding-a-group	Rebuilding a Group: Full Procedure	Strip, inspect, replace, reassemble, verify.
+2026-11-01	Thermal	boiler-materials	Boiler Materials: Copper, Stainless and Brass	Corrosion behaviour, cost, and what each tolerates.
+2026-11-02	Thermal	boiler-construction-and-certification	Boiler Construction and Certification	Welds, fittings, ratings and the paperwork that matters.
+2026-11-03	Thermal	heat-exchanger-design-types	Heat Exchanger Design Types	Tube-in-boiler and variants, and their thermal behaviour.
+2026-11-04	Thermal	boiler-architectures-in-depth	Boiler Architectures in Depth	Revisiting single, dual and multi with measurement rather than marketing.
+2026-11-05	Thermal	heating-elements-construction	Heating Elements: Construction and Ratings	Sheathing, watt density, and why density drives scale damage.
+2026-11-06	Thermal	element-failure-modes	Element Failure Modes	Open circuit, insulation breakdown, and dry-fire damage.
+2026-11-07	Thermal	insulation-resistance-testing	Insulation Resistance Testing in Depth	Method, expected values, and reading a trend over years.
+2026-11-08	Thermal	boiler-insulation-standby-loss	Boiler Insulation and Standby Losses	Energy, room heat, and whether jackets are worth fitting.
+2026-11-09	Thermal	pressurestats	Pressurestats: Mechanical Control	How they work, how they drift, and how to set one.
+2026-11-10	Thermal	pid-theory	PID Controllers: The Theory You Need	Proportional, integral and derivative, without the maths degree.
+2026-11-11	Thermal	pid-tuning-practice	PID Tuning in Practice	What to change, in what order, and what to check first instead.
+2026-11-12	Thermal	temperature-probes-types	Temperature Probes: PT100, Thermocouple, NTC	Characteristics, failure behaviour and interchangeability.
+2026-11-13	Thermal	probe-placement-and-offsets	Probe Placement and Offsets	Why the display is not the puck, and how to quantify the gap.
+2026-11-14	Thermal	sight-glasses	Sight Glasses and Level Indication	Reading them, cleaning them, and replacing them safely.
+2026-11-15	Thermal	conductivity-level-probes	Conductivity Level Probes in Depth	Insulation, tracking, and the false-full that kills elements.
+2026-11-16	Thermal	autofill-valves-and-circuits	Autofill Valves and Circuits	The whole circuit, from probe to solenoid to controller.
+2026-11-17	Thermal	fill-timeouts-and-protection	Fill Timeouts and Protection	The device that prevents a flood or a dry boiler.
+2026-11-18	Thermal	vacuum-breakers	Vacuum Breakers	Small, cheap, frequently stuck, and routinely misdiagnosed.
+2026-11-19	Thermal	safety-valves-and-ratings	Safety Valves and Ratings	Why the rating is a design value and must never be raised.
+2026-11-20	Thermal	thermal-fuses-and-high-limits	Thermal Fuses and High Limits	One-shot versus resettable, and why a trip is a symptom.
+2026-11-21	Thermal	steam-pressure-and-brew-temp	Steam Pressure and Brew Temperature	The coupling on HX machines, and how to work within it.
+2026-11-22	Thermal	warm-up-behaviour	Warm-Up Behaviour and Schedules	Thermal mass, equilibrium time, and the unstable first hour.
+2026-11-23	Thermal	thermal-recovery-testing	Thermal Recovery Testing	The load test that actually predicts rush performance.
+2026-11-24	Thermal	boiler-scale-assessment	Boiler Scale Assessment	Borescopes, probes and proxies for seeing inside.
+2026-11-25	Thermal	boiler-removal-and-refit	Boiler Removal and Refit	When it is justified, and how to do it without new leaks.
+2026-11-26	Thermal	descaling-out-of-the-machine	Descaling Out of the Machine	The controlled version, on a bench, where you can see it.
+2026-11-27	Thermal	boiler-corrosion	Boiler Corrosion: Causes	Aggressive water, dissimilar metals, and stagnation.
+2026-11-28	Thermal	pressure-vessel-inspection	Pressure Vessel Inspection Regimes	What may be legally required, and who is competent to do it.
+2026-11-29	Thermal	steam-quality-and-dryness	Steam Quality and Dryness	Wet steam, its causes, and its effect on milk.
+2026-11-30	Thermal	energy-use-and-eco-modes	Energy Use and Eco Modes	Standby cost, scheduling, and what actually saves money.
+2026-12-01	Grinders	grinder-anatomy	Grinder Anatomy	Every component from hopper to exit, and its role.
+2026-12-02	Grinders	flat-burr-geometry	Flat Burr Geometry in Depth	Cutting zones, tooth patterns and what they do to particles.
+2026-12-03	Grinders	conical-burr-geometry	Conical Burr Geometry in Depth	Feed geometry, gravity assistance and retention behaviour.
+2026-12-04	Grinders	burr-materials-and-coatings	Burr Materials and Coatings	Steel grades, titanium and DLC, and honest life expectations.
+2026-12-05	Grinders	cast-versus-machined-burrs	Cast versus Machined Burrs	Manufacturing method, edge quality and cost.
+2026-12-06	Grinders	cutting-versus-crushing	Cutting versus Crushing: Particle Formation	What sharp burrs do that blunt ones cannot.
+2026-12-07	Grinders	particle-size-distribution	Particle Size Distribution: Measuring It	Sieves, laser diffraction, and what the curve tells you.
+2026-12-08	Grinders	fines-causes-and-consequences	Fines: Causes and Consequences	Where they come from and what they do to flow.
+2026-12-09	Grinders	grinder-motors-and-duty	Grinder Motors and Duty Ratings	Continuous duty, thermal cutouts, and undersized motors.
+2026-12-10	Grinders	gear-reduction-and-rpm	Gear Reduction and RPM	Speed against heat, and the trade you are making.
+2026-12-11	Grinders	bearings-and-shaft-play	Bearings and Shaft Play	Measuring play, and what it does to grind consistency.
+2026-12-12	Grinders	burr-carriers-and-seating	Burr Carriers and Seating	Mounting faces, compacted coffee, and false misalignment.
+2026-12-13	Grinders	burr-alignment-in-depth	Burr Alignment in Depth	Measurement methods beyond the marker test.
+2026-12-14	Grinders	shimming-procedure	Shimming: A Full Procedure	Material, thickness, iteration and documentation.
+2026-12-15	Grinders	stepped-versus-stepless	Adjustment Mechanisms: Stepped versus Stepless	Repeatability against resolution.
+2026-12-16	Grinders	zero-point-and-calibration	Zero Point and Calibration	Finding it safely, and recording it so it survives a burr change.
+2026-12-17	Grinders	measuring-grind-retention	Grind Retention: Measuring It	A method that gives you a number rather than an opinion.
+2026-12-18	Grinders	single-dosing-versus-hoppers	Single Dosing versus Hoppers	Retention, freshness, speed and bean weight effects.
+2026-12-19	Grinders	hopper-design-and-bean-feed	Hopper Design and Bean Feed	Gates, angles, and why fill level changes the grind.
+2026-12-20	Grinders	anti-static-measures	Anti-Static Measures	What works, what does not, and why it matters for dose accuracy.
+2026-12-21	Grinders	dosing-by-time	Dosing by Time	Why a timed grinder drifts, and how often to check it.
+2026-12-22	Grinders	dosing-by-weight	Dosing by Weight: Load Cells	Accuracy, drift, and a precision sensor in a hostile place.
+2026-12-23	Grinders	chute-design-and-buildup	Chute Design and Buildup	The worst-fouling part of the grinder, and how to clear it.
+2026-12-24	Grinders	clumping-and-clump-breakers	Clumping and Clump Breakers	Causes, consequences and the devices that address them.
+2026-12-25	Grinders	grinder-heat-management	Grinder Heat: Measuring and Managing	Burr temperature, ambient air, and grind drift through the day.
+2026-12-26	Grinders	grinder-cleaning-deep-dive	Grinder Cleaning: A Deep Dive	Every surface, the right tools, and never water on burrs.
+2026-12-27	Grinders	burr-replacement-procedure	Burr Replacement: Full Procedure	Removal, cleaning, fitting, torque, alignment and break-in.
+2026-12-28	Grinders	diagnosing-inconsistent-dose	Diagnosing Inconsistent Dose	An ordered procedure for a grinder that will not repeat.
+2026-12-29	Grinders	diagnosing-grinder-motor-faults	Diagnosing Grinder Motor Faults	Capacitors, windings, thermal cutouts and bearings.
+2026-12-30	Grinders	filter-versus-espresso-grinders	Filter versus Espresso Grinders	Why one grinder cannot comfortably do both.
+2026-12-31	Grinders	decaf-and-low-volume-grinders	Decaf and Low-Volume Grinder Care	Calendar-based maintenance for equipment throughput will never trigger.
+2027-01-01	Electrical	reading-a-wiring-diagram	Reading a Machine Wiring Diagram	Conventions, symbols, and tracing a circuit you have never seen.
+2027-01-02	Electrical	single-phase-supply-in-depth	Single Phase Supply in Depth	Load, cable, protection and the limits you will hit.
+2027-01-03	Electrical	three-phase-supply-in-depth	Three Phase Supply in Depth	Balancing elements, per-leg current and why it needs less copper.
+2027-01-04	Electrical	star-versus-delta-elements	Star versus Delta Element Configuration	The factory setting that cannot be changed on site.
+2027-01-05	Electrical	voltage-drop-calculations	Voltage Drop Calculations	Working it out, and why 5% low costs 10% of your heating.
+2027-01-06	Electrical	mcb-rcd-and-rcbo	Circuit Protection: MCB, RCD and RCBO	What each protects against, and why per-appliance matters.
+2027-01-07	Electrical	earth-leakage-in-depth	Earth Leakage in Depth	Standing leakage, ageing elements, and accumulated nuisance trips.
+2027-01-08	Electrical	earthing-and-bonding	Earthing and Bonding	A safety system on a plumbed metal appliance.
+2027-01-09	Electrical	contactors-operation-and-wear	Contactors: Operation and Wear	Arcing, pitting, and the weld that becomes dangerous.
+2027-01-10	Electrical	ssrs-operation-and-failure	Solid State Relays: Operation and Failure	Why they fail short, and what that means for a boiler.
+2027-01-11	Electrical	heatsinking-ssrs	Heatsinking SSRs	Mounting, compound, airflow, and the repeat failure you prevent.
+2027-01-12	Electrical	fuses-and-ratings	Fuses and Their Ratings	Type, rating and why substituting is not a repair.
+2027-01-13	Electrical	transformers-and-low-voltage	Transformers and Low Voltage Circuits	Control circuits, and diagnosing when they collapse.
+2027-01-14	Electrical	control-board-architecture	Control Boards: Architecture	Inputs, outputs, and what a board can and cannot tell you.
+2027-01-15	Electrical	firmware-and-parameters	Firmware and Parameter Settings	Documenting changes, and recovering a machine someone has edited.
+2027-01-16	Electrical	display-and-interface-faults	Display and Interface Faults	Ribbon cables, connectors and condensation.
+2027-01-17	Electrical	keypads-and-membrane-switches	Keypads and Membrane Switches	A wet environment's most-touched component.
+2027-01-18	Electrical	how-flowmeters-work	Flowmeters: How They Work	Impellers, sensors and pulse counting.
+2027-01-19	Electrical	flowmeter-calibration	Flowmeter Calibration	Doing it properly, and how often it needs redoing.
+2027-01-20	Electrical	flowmeter-faults	Flowmeter Faults	Clogging, drift and the shot that got shorter without anyone changing it.
+2027-01-21	Electrical	dose-programming	Dose Programming	Setting volumetric doses, per group, and verifying at the cup.
+2027-01-22	Electrical	machine-timers-and-scheduling	Machine Timers and Scheduling	Automatic warm-up, and the unstable first hour it eliminates.
+2027-01-23	Electrical	motor-protection-and-overloads	Motor Protection and Overloads	Pump and grinder motors, and what trips them.
+2027-01-24	Electrical	wiring-harness-inspection	Wiring Harness Inspection	Chafing, heat damage, and evidence of past water ingress.
+2027-01-25	Electrical	terminal-torque-and-thermal-checks	Terminal Torque and Thermal Checks	The loose joint that cooks a loom, and how to find it early.
+2027-01-26	Electrical	water-ingress-into-electrics	Water Ingress into Electrics	Reading the evidence, and finding the leak behind the fault.
+2027-01-27	Electrical	testing-safely	Testing Safely: Procedure	Isolation, proving dead, and working on a machine that cannot be energised.
+2027-01-28	Electrical	meter-selection-for-service	Meter Selection for Service Work	What to own, what it must be rated for, and what to avoid.
+2027-01-29	Electrical	electrical-documentation	Electrical Documentation and Certification	What to record, what to issue, and what clients should keep.
+2027-01-30	Electrical	intermittent-electrical-faults	Fault-Finding an Intermittent Electrical Fault	Method for a fault that will not present while you watch.
+2027-01-31	Electrical	grounding-noise-and-sensors	Grounding Noise and Sensor Interference	When a temperature reading is an electrical problem.
+2027-02-01	Steam & Milk	steam-circuit-anatomy	Steam Circuit Anatomy	From boiler take-off to tip, and every seal in between.
+2027-02-02	Steam & Milk	steam-valve-types	Steam Valve Types	Needle, lever and joystick, and how each wears.
+2027-02-03	Steam & Milk	steam-valve-rebuilds	Steam Valve Seals and Rebuilds	A twenty-minute scheduled job, or a valve body replacement.
+2027-02-04	Steam & Milk	steam-wands-and-tips-in-depth	Steam Wands and Tips in Depth	Bore, length, angle and what they do to texturing.
+2027-02-05	Steam & Milk	tip-hole-patterns	Tip Hole Patterns and Texturing	Hole count and angle against jug size and milk volume.
+2027-02-06	Steam & Milk	suck-back-and-hygiene	Suck-Back and Hygiene	The mechanism behind most steam wand problems.
+2027-02-07	Steam & Milk	milk-line-cleaning-chemistry	Milk-Line Cleaning Chemistry	Why protein and fat need alkaline, not bleach.
+2027-02-08	Steam & Milk	automatic-milk-systems	Automatic Milk Systems	What they add, what they cost to maintain, and who should buy one.
+2027-02-09	Steam & Milk	milk-system-temperature-probes	Temperature Probes in Milk Systems	Placement, fouling and calibration.
+2027-02-10	Steam & Milk	milk-fridges-and-refrigeration	Milk Fridges and Refrigeration Basics	Cabinet temperature, condensers and ambient dependence.
+2027-02-11	Steam & Milk	refrigeration-faults	Refrigeration Faults	Icing, short cycling, dirty coils and failing compressors.
+2027-02-12	Steam & Milk	milk-texturing-physics	Milk Quality and Texturing Physics	Protein, fat, temperature and what a good microfoam actually is.
+2027-02-13	Steam & Milk	alternative-milks	Alternative Milks: Behaviour and Equipment	Why they texture differently and what that means for cleaning.
+2027-02-14	Steam & Milk	steam-pressure-setting	Steam Boiler Pressure Setting	Finding the right figure for your menu and your wand.
+2027-02-15	Steam & Milk	wet-steam-diagnosis	Wet Steam Diagnosis	Level, pressure and condensate, in diagnostic order.
+2027-02-16	Steam & Milk	hot-water-taps-and-mixing	Hot Water Taps and Mixing	Dilution, temperature and why tea tastes bad from an espresso machine.
+2027-02-17	Steam & Milk	hot-water-for-tea	Hot Water Quality for Tea and Americano	A separate specification hiding inside the same machine.
+2027-02-18	Steam & Milk	descaling-steam-circuits	Descaling Steam Circuits	Wands, valves and tips, and where deposit accumulates.
+2027-02-19	Steam & Milk	steam-hygiene-inspection	Steam Hygiene and Inspection	What an inspector looks at, and what they will find.
+2027-02-20	Steam & Milk	jug-selection-and-care	Jug Selection and Care	Volume, shape, spout and when to retire one.
+2027-02-21	Steam & Milk	steam-safety-and-burns	Steam Safety and Burns	Wand position, purge direction and staff protection.
+2027-02-22	Steam & Milk	milk-equipment-cleaning-schedule	Cleaning Schedules for Milk Equipment	Daily, weekly and monthly, with quantities.
+2027-02-23	Steam & Milk	milk-waste-and-drainage	Milk Waste and Drainage	The biofilm problem, upstream of the smell.
+2027-02-24	Steam & Milk	bacterial-risk-and-food-safety	Bacterial Risk and Food Safety	Why milk residue at body temperature is the real hazard.
+2027-02-25	Steam & Milk	allergen-management	Allergen Management Behind the Bar	Shared equipment, cross-contact and the decaf parallel.
+2027-02-26	Steam & Milk	autosteam-calibration	Autosteam Calibration	Setting targets and verifying them against a thermometer.
+2027-02-27	Steam & Milk	diagnosing-poor-texturing	Diagnosing Poor Texturing: Hardware First	Before retraining anyone, check the tip and the level.
+2027-02-28	Steam & Milk	steam-circuit-rebuild	Steam Circuit Rebuild	Full strip, seal replacement and recommissioning.
+2027-03-01	Plumbing	machine-plumbing-overview	Machine Plumbing Overview	Every connection into and out of the machine.
+2027-03-02	Plumbing	inlet-requirements	Inlet Requirements	Pressure, flow and what starving a pump actually does.
+2027-03-03	Plumbing	pipe-materials-and-standards	Pipe Materials and Standards	What is permitted for potable supply, and what is not.
+2027-03-04	Plumbing	braided-hoses-and-their-life	Braided Hoses and Their Life	A wearing part with a date on it, usually ignored.
+2027-03-05	Plumbing	fittings-unions-and-threads	Fittings, Unions and Thread Standards	BSP, NPT, flare and compression, and mixing them badly.
+2027-03-06	Plumbing	isolation-valves	Isolation Valves	Position, type, and the valve that will not shut when you need it.
+2027-03-07	Plumbing	check-valves-and-consequences	Check Valves and Their Consequences	Preventing backflow and creating a closed system.
+2027-03-08	Plumbing	expansion-vessel-sizing	Expansion Vessels: Sizing and Precharge	Getting it right rather than fitting one and hoping.
+2027-03-09	Plumbing	pressure-regulators	Pressure Regulators	Types, setting, and failure behaviour.
+2027-03-10	Plumbing	gauge-accuracy-and-testing	Gauges: Accuracy and Testing	A wrong gauge makes every other judgement wrong.
+2027-03-11	Plumbing	rotary-pumps-in-depth	Rotary Pumps in Depth	Vanes, clearances, wear and rebuild economics.
+2027-03-12	Plumbing	vibratory-pumps-in-depth	Vibratory Pumps in Depth	Duty limits, heat and why pressure varies with flow.
+2027-03-13	Plumbing	pump-motors-and-couplings	Pump Motors and Couplings	The cheap part that stops a machine dead.
+2027-03-14	Plumbing	cavitation-in-depth	Cavitation in Depth	How it destroys a pump, and the sound that warns you.
+2027-03-15	Plumbing	bypass-valves-and-adjustment	Bypass Valves and Adjustment	What the screw does, and when adjusting it is masking a fault.
+2027-03-16	Plumbing	setting-brew-pressure-properly	Setting Brew Pressure Properly	Under flow, at the group, with a gauge you trust.
+2027-03-17	Plumbing	measuring-flow-rate	Measuring Flow Rate	Method, baseline and comparison between groups.
+2027-03-18	Plumbing	pressure-versus-flow	Pressure versus Flow: The Relationship	Why holding one constant moves the other.
+2027-03-19	Plumbing	water-hammer-mitigation	Water Hammer Mitigation	Arrestors, routing and solenoid timing.
+2027-03-20	Plumbing	drainage-design-in-depth	Drainage Design in Depth	Falls, sizing, venting and the code requirement.
+2027-03-21	Plumbing	drain-materials-and-falls	Drain Materials and Falls	Smooth bore, supports, and the belly that becomes a trap.
+2027-03-22	Plumbing	air-gaps-and-indirect-waste	Air Gaps and Indirect Waste	The requirement, the reason, and how inspectors check.
+2027-03-23	Plumbing	drain-pumps	Drain Pumps	When the building forces one, and what you sign up for.
+2027-03-24	Plumbing	biofilm-and-drain-hygiene	Biofilm and Drain Hygiene	Enzymatic treatment, dwell time, and why bleach fails.
+2027-03-25	Plumbing	grease-and-food-waste	Grease and Food Waste Interaction	Shared waste lines and the blockages they cause.
+2027-03-26	Plumbing	leak-detection-methods	Leak Detection Methods	Dye, paper, pressure tests and patience.
+2027-03-27	Plumbing	leak-diagnosis-procedure	Leak Diagnosis: A Procedure	Cold, hot, static and flowing, in order.
+2027-03-28	Plumbing	winterisation-and-freeze	Winterisation and Freeze Protection	Unheated premises, and the crack you find at 9 bar.
+2027-03-29	Plumbing	decommissioning-and-storage	Decommissioning and Storage	Draining properly so the machine survives the shelf.
+2027-03-30	Plumbing	relocating-a-machine	Relocating a Machine	Draining, transport, and recommissioning as if new.
+2027-03-31	Plumbing	plumbing-inspection-checklist	Plumbing Inspection Checklist	The annual walk-through, itemised.
+2027-04-01	Installations	the-design-brief	The Design Brief	Extracting what the bar actually needs to do from what the client wants.
+2027-04-02	Installations	reading-architectural-drawings	Reading Architectural Drawings	What they tell you, and the four things they routinely get wrong.
+2027-04-03	Installations	coordinating-with-trades	Coordinating with Trades	Electrician, plumber, joiner, HVAC, and who needs what when.
+2027-04-04	Installations	programme-and-lead-times	Programme and Lead Times	The items that will delay an opening, ranked.
+2027-04-05	Installations	counter-construction-and-load	Counter Construction and Load	Carcass, supports and a load case nobody calculated.
+2027-04-06	Installations	counter-materials	Counter Materials	Stone, solid surface, timber and stainless, and their consequences.
+2027-04-07	Installations	cutouts-and-templates	Cutouts and Templates	Getting positions frozen early enough to avoid cracked stone.
+2027-04-08	Installations	service-voids-and-access	Service Voids and Access	Designing the space maintenance happens in.
+2027-04-09	Installations	machine-height-ergonomics	Machine Height and Ergonomics in Depth	Group height, lock-in angle and repetitive strain.
+2027-04-10	Installations	reach-envelopes	Reach Envelopes and Anthropometrics	Designing for the range of people who will work there.
+2027-04-11	Installations	workflow-modelling	Workflow Modelling	Cardboard mock-ups and counting steps before anything is built.
+2027-04-12	Installations	multi-station-bars	Multi-Station Bars	Two baristas, one machine, and the space that makes it possible.
+2027-04-13	Installations	mobile-and-kiosk-installs	Mobile and Kiosk Installs	Constrained power, water and waste, and how to work within them.
+2027-04-14	Installations	roasteries-and-shared-spaces	Roasteries and Shared Spaces	Chaff, heat, extraction and a very different environment.
+2027-04-15	Installations	electrical-coordination	Electrical Coordination	Getting the schedule to the electrician early enough to matter.
+2027-04-16	Installations	water-coordination	Water Coordination	Treatment position, isolation and who fits what.
+2027-04-17	Installations	hvac-coordination	HVAC Coordination	Handing over a real equipment load and getting confirmation.
+2027-04-18	Installations	extraction-and-heat	Extraction and Heat Behind the Bar	Local extract against general cooling, per watt.
+2027-04-19	Installations	acoustics-behind-the-bar	Acoustics Behind the Bar	Grinders, counters as speakers, and simple mitigation.
+2027-04-20	Installations	lighting-for-the-bar	Lighting for the Bar	Seeing an extraction, and seeing a leak.
+2027-04-21	Installations	flooring-and-drainage	Flooring and Drainage	Slip, spill and the floor sink nobody wanted to allow for.
+2027-04-22	Installations	cleaning-access-design	Cleaning Access Design	Designing so the cleaning routine is physically possible.
+2027-04-23	Installations	waste-and-recycling-design	Waste and Recycling Design	Knock boxes, bins, and never plumbing grounds to drain.
+2027-04-24	Installations	storage-beans-milk-cups	Storage: Beans, Milk and Cups	Volumes, temperatures and restock paths.
+2027-04-25	Installations	pos-and-workflow-integration	POS and Workflow Integration	Where the till goes, and how it affects the barista's position.
+2027-04-26	Installations	accessibility-requirements	Accessibility Requirements	Counter heights, approach and what regulations expect.
+2027-04-27	Installations	signage-and-customer-flow	Signage and Customer Flow	Keeping customers out of the barista's two metres.
+2027-04-28	Installations	handover-and-snagging	Handover and Snagging	A defined list, signed, rather than a trailing set of complaints.
+2027-04-29	Installations	post-install-review	The Post-Install Review	Coming back at two weeks, and what to look for.
+2027-04-30	Installations	common-design-failures	Common Design Failures, Catalogued	The same dozen mistakes, and how to head each one off.
+2027-05-01	Diagnostics	a-diagnostic-method	A Diagnostic Method	Observe, measure, hypothesise, test. Applied to coffee equipment.
+2027-05-02	Diagnostics	taking-a-fault-report	Taking a Proper Fault Report	The questions that halve the visit.
+2027-05-03	Diagnostics	baseline-data	Baseline Data and Why It Matters	Diagnosis is comparison. Without a baseline it is guessing.
+2027-05-04	Diagnostics	instrumentation-for-diagnosis	Instrumentation for Diagnosis	The kit that turns opinions into numbers.
+2027-05-05	Diagnostics	diagnosing-by-taste	Diagnosing by Taste	Using the cup as an instrument, and its limits.
+2027-05-06	Diagnostics	diagnosing-bitterness	Diagnosing Bitterness	Hardware, water and process causes, separated.
+2027-05-07	Diagnostics	diagnosing-sourness	Diagnosing Sourness	Temperature, extraction and the things that mimic it.
+2027-05-08	Diagnostics	diagnosing-thin-body	Diagnosing Thin Body	Water chemistry, burrs and pressure.
+2027-05-09	Diagnostics	diagnosing-inconsistency	Diagnosing Inconsistency	The hardest fault class, and how to make it repeatable.
+2027-05-10	Diagnostics	no-power	Fault: No Power	A systematic tree from supply to board.
+2027-05-11	Diagnostics	no-water	Fault: No Water	Supply, filter, pump, solenoid, in order.
+2027-05-12	Diagnostics	no-heat	Fault: No Heat	Element, contactor, controller, probe, protection.
+2027-05-13	Diagnostics	overheating	Fault: Overheating	The dangerous one, and why you isolate first.
+2027-05-14	Diagnostics	underheating	Fault: Underheating	Scale, voltage, element and specification.
+2027-05-15	Diagnostics	no-pressure	Fault: No Pressure	Inlet through to bypass, cheapest first.
+2027-05-16	Diagnostics	excess-pressure	Fault: Excess Pressure	Expansion, regulation and a valve that should have relieved.
+2027-05-17	Diagnostics	slow-flow	Fault: Slow Flow	Group-side against machine-side, and how to tell instantly.
+2027-05-18	Diagnostics	fast-flow	Fault: Fast Flow	Erosion, wear and the settings that hide it.
+2027-05-19	Diagnostics	leaks-systematic	Fault: Leaks, Systematically	Locating by timing and position.
+2027-05-20	Diagnostics	noise-systematic	Fault: Noise, Systematically	Pump, mount, valve or panel.
+2027-05-21	Diagnostics	smells	Fault: Smells	Drain, milk, electrical and rancid coffee, distinguished.
+2027-05-22	Diagnostics	electrical-trips	Fault: Electrical Trips	Real fault against accumulated leakage.
+2027-05-23	Diagnostics	reading-error-codes	Reading Error Codes	What they mean, what they do not, and their limits.
+2027-05-24	Diagnostics	intermittent-faults	Intermittent Faults	Instrumenting a machine to catch what you cannot watch for.
+2027-05-25	Diagnostics	faults-after-a-service	Faults After a Service	What we disturbed, and taking responsibility for it.
+2027-05-26	Diagnostics	faults-after-a-water-change	Faults After a Water Change	New cartridge, new supply, new problem.
+2027-05-27	Diagnostics	faults-after-a-coffee-change	Faults After a Coffee Change	When the machine is fine and the variable moved.
+2027-05-28	Diagnostics	when-it-isnt-the-machine	When It Isn't the Machine	Beans, staff, ambient and expectations.
+2027-05-29	Diagnostics	escalating-to-the-manufacturer	When to Escalate to the Manufacturer	How to ask so you get a useful answer.
+2027-05-30	Diagnostics	documenting-a-diagnosis	Documenting a Diagnosis	Writing it so the next visit starts ahead.
+2027-05-31	Diagnostics	three-case-studies	Three Case Studies	Real faults, wrong first guesses, and what found them.
+2027-06-01	Operations	structuring-a-service-offering	Structuring a Service Offering	Reactive, preventive and contracted, and what each requires.
+2027-06-02	Operations	pricing-service-work	Pricing Service Work	Time, travel, parts and the value of not failing.
+2027-06-03	Operations	service-contracts	Service Contracts	What to include, what to exclude, and how to write it plainly.
+2027-06-04	Operations	response-times-and-slas	Response Times and SLAs	Promising what you can actually deliver.
+2027-06-05	Operations	scheduling-preventive-work	Scheduling Preventive Work	Fitting a year of visits around trading hours.
+2027-06-06	Operations	van-stock	Van Stock	What travels with you, and what does not.
+2027-06-07	Operations	parts-sourcing	Parts Sourcing	Genuine, equivalent and obsolete.
+2027-06-08	Operations	warranty-administration	Warranty Administration	Documentation that makes a claim succeed.
+2027-06-09	Operations	working-with-manufacturers	Working with Manufacturers	Technical support, training and escalation paths.
+2027-06-10	Operations	technical-documentation	Technical Documentation	Building a library you can actually search.
+2027-06-11	Operations	training-technicians	Training Technicians	Sequencing skills, and what to supervise.
+2027-06-12	Operations	safe-working-practices	Safe Working Practices	Pressure, electricity and hot water in one small box.
+2027-06-13	Operations	risk-assessment	Risk Assessment	Doing it usefully rather than as paperwork.
+2027-06-14	Operations	electrical-safety-compliance	Electrical Safety Compliance	Testing, certification and record keeping.
+2027-06-15	Operations	pressure-vessel-compliance	Pressure Vessel Compliance	Establishing what applies, and telling clients.
+2027-06-16	Operations	food-safety-and-hygiene	Food Safety and Hygiene	Where equipment service meets food law.
+2027-06-17	Operations	water-regulations	Water Regulations	Backflow, materials approval and inspection.
+2027-06-18	Operations	waste-and-chemical-handling	Waste and Chemical Handling	Descalers, detergents and used cartridges.
+2027-06-19	Operations	insurance-considerations	Insurance Considerations	What cover assumes about your maintenance records.
+2027-06-20	Operations	customer-communication	Customer Communication	Setting expectations before the work, not after.
+2027-06-21	Operations	explaining-technical-findings	Explaining Technical Findings	Making a scale problem understandable to an owner.
+2027-06-22	Operations	managing-expectations	Managing Expectations	Saying what a repair will and will not achieve.
+2027-06-23	Operations	quoting-repair-versus-replacement	Quoting Repair versus Replacement	Doing the arithmetic honestly, out loud.
+2027-06-24	Operations	asset-lifecycle-planning	Asset Lifecycle Planning	Helping a client plan replacement rather than react to failure.
+2027-06-25	Operations	fleet-management	Fleet Management for Groups	Standardising equipment across sites, and why it pays.
+2027-06-26	Operations	remote-monitoring-and-telemetry	Remote Monitoring and Telemetry	What connected machines can genuinely tell you.
+2027-06-27	Operations	data-from-connected-machines	Data from Connected Machines	Shot counts, temperatures and predictive maintenance.
+2027-06-28	Operations	sustainability-and-energy	Sustainability and Energy	Standby losses, water waste and honest claims.
+2027-06-29	Operations	refurbishment-and-resale	Refurbishment and Resale	What a full service history is worth.
+2027-06-30	Operations	building-a-knowledge-base	Building a Service Knowledge Base	Capturing what your team learns so it is not lost.
+2027-07-01	Extraction	what-extraction-is	What Extraction Actually Is	Solubles, water and time, without the mysticism.
+2027-07-02	Extraction	solubles-and-yield	Solubles and Yield	What dissolves, in what order, and what tastes of what.
+2027-07-03	Extraction	tds-and-refractometry	TDS and Refractometry	Measuring extraction, and what the number is worth.
+2027-07-04	Extraction	brew-ratio-explained	Brew Ratio	The one variable everyone states and few control.
+2027-07-05	Extraction	dose-and-basket-fit	Dose and Basket Fit	Headspace, compaction and matching dose to basket.
+2027-07-06	Extraction	grind-size-and-distribution	Grind Size and Distribution	Why one number cannot describe a grind.
+2027-07-07	Extraction	time-as-a-dependent-variable	Time as a Dependent Variable	Shot time is an outcome, not a setting.
+2027-07-08	Extraction	temperature-effects	Temperature Effects on Extraction	What a degree actually does in the cup.
+2027-07-09	Extraction	pressure-effects	Pressure Effects on Extraction	Nine bar, and why it is a convention rather than a law.
+2027-07-10	Extraction	flow-effects	Flow Effects on Extraction	Flow rate as the variable behind pressure.
+2027-07-11	Extraction	preinfusion-effects	Preinfusion Effects	What a gentle start does to a coffee bed.
+2027-07-12	Extraction	channelling-physics	Channelling Physics	Why water finds a path, and what actually stops it.
+2027-07-13	Extraction	puck-preparation	Puck Preparation	Distribution, levelling and consolidation, in order of effect.
+2027-07-14	Extraction	distribution-tools	Distribution Tools	What they do, what they do not, and which are theatre.
+2027-07-15	Extraction	tamping	Tamping	Pressure, level and why consistency beats force.
+2027-07-16	Extraction	water-chemistry-and-extraction	Water Chemistry and Extraction	Closing the loop back to alkalinity and hardness.
+2027-07-17	Extraction	freshness-and-degassing	Coffee Freshness and Degassing	CO2, crema and why a recipe moves over a fortnight.
+2027-07-18	Extraction	roast-level-and-extraction	Roast Level and Extraction	Solubility, density and why light roasts fight you.
+2027-07-19	Extraction	single-origin-versus-blend	Single Origin versus Blend Behaviour	Consistency, forgiveness and menu design.
+2027-07-20	Extraction	dialling-in-a-method	Dialling In: A Method	A repeatable procedure rather than a series of hunches.
+2027-07-21	Extraction	recording-and-repeating-recipes	Recording and Repeating Recipes	What to write down so tomorrow starts where today ended.
+2027-07-22	Extraction	calibration-across-groups	Calibration Across Groups	Making three groups produce the same coffee.
+2027-07-23	Extraction	calibration-across-sites	Calibration Across Sites	Standardising a multi-site operation honestly.
+2027-07-24	Extraction	sensory-calibration-for-teams	Sensory Calibration for Teams	Building shared language so feedback means something.
+2027-07-25	Extraction	recipe-that-stops-working	Troubleshooting a Recipe That Stops Working	Hardware, water, coffee or people: an ordered check.
+2027-07-26	Extraction	closing-the-year	Closing the Year: What Actually Matters	A year of detail, reduced to the handful of things that decide the cup.

@@ -9,8 +9,10 @@ matter** — the daily workflow run releases it, with nothing to merge or edit.
 | Path | Purpose |
 | --- | --- |
 | `content/posts/*.md` | One file per post. Filename must start `YYYY-MM-DD-`. |
+| `content/calendar.tsv` | Editorial calendar: one planned topic per day. Planning only — not a build input. |
 | `static/` | Copied to the site root as-is (`styles.css`, `404.html`). |
-| `tools/build.py` | Generator. Renders posts, skips future dates, writes `dist/`. |
+| `tools/build.py` | Generator. Renders posts, skips future dates and drafts, writes `dist/`. |
+| `tools/scaffold.py` | Creates draft post files from calendar rows. |
 | `dist/` | Build output. Git-ignored; never edit by hand. |
 | `.github/workflows/deploy-pages.yml` | Build and deploy pipeline. |
 
@@ -114,11 +116,49 @@ correctly before its release date.
 - **Change the daily release time:** edit the `cron` expression in the workflow.
   It is UTC.
 
-## Current schedule
+## The editorial calendar
 
-32 posts, one per day, 27 July – 27 August 2026. Themes run roughly as
-installation and site services → equipment specification and commissioning →
-routine maintenance → diagnostics and faults → operations.
+`content/calendar.tsv` plans one topic per day for a full year — 2026-08-28 to
+2027-07-26 — with a date, tag, slug, title and a one-line angle for each. It is
+a **planning document**: the build never reads it as content. A calendar row
+with no corresponding post simply means no post that day.
+
+The build reports coverage against it on every run:
+
+```
+build: calendar 11/333 written, 322 unwritten
+build: next 14 days needs 14 post(s):
+build:   2026-09-08  Sulphate, Silica and the Minor Ions
+```
+
+It also warns if a calendar date has passed with nothing written, so the gap
+surfaces in the deploy log rather than on the morning.
+
+### Drafting from the calendar
+
+```sh
+.venv/bin/python tools/scaffold.py --list          # what is unwritten
+.venv/bin/python tools/scaffold.py --next 7        # scaffold the next 7
+.venv/bin/python tools/scaffold.py 2026-09-08      # one specific date
+.venv/bin/python tools/scaffold.py 2026-09-01 2026-09-30   # a range
+```
+
+Scaffolded files carry `draft: true`. **A draft is never published, even once
+its date has passed** — so an unwritten stub cannot be pushed live by the daily
+cron. Delete the `draft: true` line when the post is finished and it publishes
+on its date. Existing files are never overwritten.
+
+## Current state
+
+- **Written and scheduled:** 43 posts, one per day, 27 July – 7 September 2026.
+- **Planned, not yet written:** 322 calendar entries, 8 September 2026 onward.
+
+Monthly themes across the year: water chemistry and treatment (Sep) → the brew
+group and brew path (Oct) → boilers and thermal systems (Nov) → grinders (Dec) →
+electrics and control (Jan) → steam, milk and hot water (Feb) → plumbing, pumps
+and pressure (Mar) → bar design and installation engineering (Apr) → diagnostics
+and fault-finding (May) → service business and compliance (Jun) → extraction
+science and dial-in (Jul).
 
 ## Custom domain
 

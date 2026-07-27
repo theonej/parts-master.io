@@ -6,7 +6,7 @@
     <title>parts-master.io</title>
     <meta
       name="description"
-      content="parts-master.io — site scaffold deployed to GitHub Pages from the develop branch."
+      content="Field notes on high-end coffee bar design, espresso machine installation and service, from a working barista and technician."
     />
     <!-- Relative hrefs, not /styles.css: the site is served from a subpath
          (/parts-master.io/) until a custom domain points at it. -->
@@ -22,43 +22,38 @@
         <span class="mark" aria-hidden="true">⚙</span>
         <h1>parts&#8209;master<span class="tld">.io</span></h1>
         <p class="lede">
-          This is the starting scaffold for the site. Replace the contents of
-          <code>site/</code> and every push to <code>develop</code> publishes
-          the result automatically.
+          Field notes on high-end coffee bar design, espresso machine
+          installation and service. Written from behind the bar and under the
+          panels — specifications, commissioning, and the failures that keep
+          repeating.
         </p>
       </header>
 
       <main>
-        <section class="cards" aria-label="How this site deploys">
-          <article class="card">
-            <h2>Static by default</h2>
-            <p>
-              Plain HTML and CSS, no build step and no dependencies. Nothing to
-              install, nothing to keep patched.
-            </p>
-          </article>
-          <article class="card">
-            <h2>Deploys from <code>develop</code></h2>
-            <p>
-              A push to <code>develop</code> triggers the Actions workflow,
-              which uploads <code>site/</code> and publishes it to Pages.
-            </p>
-          </article>
-          <article class="card">
-            <h2>Room to grow</h2>
-            <p>
-              Adding a generator later means running it in the build job and
-              pointing the upload at its output directory.
-            </p>
-          </article>
-        </section>
+        <h2 class="meta">Latest</h2>
+        <ul class="posts">
+          <li>
+            <a href="blog/water-treatment-for-espresso-installs.html">
+              <span class="meta"
+                ><time datetime="2026-07-27">27 July 2026</time> ·
+                Installations</span
+              >
+              <h3>
+                Water Is the Install: Specifying Treatment for a High-End
+                Espresso Bar
+              </h3>
+              <p>
+                Why alkalinity matters more than TDS, why a softener and
+                straight RO are both the wrong answer, and the treatment I
+                actually specify on a build.
+              </p>
+            </a>
+          </li>
+        </ul>
       </main>
 
       <footer>
-        <p>
-          Deployed by GitHub Actions from
-          <code>.github/workflows/deploy-pages.yml</code>
-        </p>
+        <p>Coffee bar installation and service notes.</p>
       </footer>
     </div>
   </body>

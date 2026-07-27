@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>parts-master.io</title>
+    <meta
+      name="description"
+      content="parts-master.io — site scaffold deployed to GitHub Pages from the develop branch."
+    />
+    <!-- Relative hrefs, not /styles.css: the site is served from a subpath
+         (/parts-master.io/) until a custom domain points at it. -->
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚙️</text></svg>"
+    />
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <span class="mark" aria-hidden="true">⚙</span>
+        <h1>parts&#8209;master<span class="tld">.io</span></h1>
+        <p class="lede">
+          This is the starting scaffold for the site. Replace the contents of
+          <code>site/</code> and every push to <code>develop</code> publishes
+          the result automatically.
+        </p>
+      </header>
+
+      <main>
+        <section class="cards" aria-label="How this site deploys">
+          <article class="card">
+            <h2>Static by default</h2>
+            <p>
+              Plain HTML and CSS, no build step and no dependencies. Nothing to
+              install, nothing to keep patched.
+            </p>
+          </article>
+          <article class="card">
+            <h2>Deploys from <code>develop</code></h2>
+            <p>
+              A push to <code>develop</code> triggers the Actions workflow,
+              which uploads <code>site/</code> and publishes it to Pages.
+            </p>
+          </article>
+          <article class="card">
+            <h2>Room to grow</h2>
+            <p>
+              Adding a generator later means running it in the build job and
+              pointing the upload at its output directory.
+            </p>
+          </article>
+        </section>
+      </main>
+
+      <footer>
+        <p>
+          Deployed by GitHub Actions from
+          <code>.github/workflows/deploy-pages.yml</code>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

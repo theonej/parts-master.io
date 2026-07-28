@@ -150,8 +150,8 @@ on its date. Existing files are never overwritten.
 
 ## Current state
 
-- **Written and scheduled:** 43 posts, one per day, 27 July – 7 September 2026.
-- **Planned, not yet written:** 322 calendar entries, 8 September 2026 onward.
+- **Written and scheduled:** 66 posts, one per day, 27 July – 30 September 2026.
+- **Planned, not yet written:** 299 calendar entries, 1 October 2026 onward.
 
 Monthly themes across the year: water chemistry and treatment (Sep) → the brew
 group and brew path (Oct) → boilers and thermal systems (Nov) → grinders (Dec) →

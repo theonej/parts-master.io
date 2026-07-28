@@ -53,6 +53,12 @@ jobs:
 
       - name: Configure Pages
         uses: actions/configure-pages@v6
+        with:
+          # Creates the Pages site on the first run if it does not already
+          # exist, and sets its build source to GitHub Actions. Without this
+          # the deploy fails until someone enables Pages in Settings by hand.
+          # Note this makes the workflow itself publish a public website.
+          enablement: true
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5

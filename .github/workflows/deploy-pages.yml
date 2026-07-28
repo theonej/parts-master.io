@@ -49,6 +49,11 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Build site
+        env:
+          # Absolute base for canonical and Open Graph URLs. Set the SITE_URL
+          # repository variable when a custom domain is in use.
+          SITE_URL: ${{ vars.SITE_URL }}
+          OG_IMAGE: ${{ vars.OG_IMAGE }}
         run: python tools/build.py
 
       - name: Configure Pages
@@ -75,3 +80,49 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
+
+  # Announce newly published posts to Facebook. Runs only after a successful
+  # deploy, so the link in the post cannot 404. Safe to run on every push and
+  # every cron tick: content/announced.json records what has already gone out,
+  # and the script posts nothing that is already in it.
+  announce:
+    needs: deploy
+    runs-on: ubuntu-latest
+    # Only this job can write to the repository, and only to commit the ledger.
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          ref: develop
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Announce new posts
+        env:
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          FB_PAGE_ACCESS_TOKEN: ${{ secrets.FB_PAGE_ACCESS_TOKEN }}
+          FB_API_VERSION: ${{ vars.FB_API_VERSION }}
+          SITE_URL: ${{ vars.SITE_URL }}
+        run: python tools/announce.py
+
+      - name: Record what was announced
+        run: |
+          if git diff --quiet -- content/announced.json; then
+            echo "ledger unchanged, nothing to commit"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/announced.json
+          # Commits made with GITHUB_TOKEN do not themselves trigger workflows,
+          # so this cannot loop. [skip ci] is belt and braces.
+          git commit -m "Record Facebook announcements [skip ci]"
+          git push origin HEAD:develop

@@ -31,6 +31,15 @@ STATIC_DIR = ROOT / "static"
 OUT_DIR = ROOT / "dist"
 
 SITE_TITLE = "parts-master.io"
+# Absolute base for canonical and Open Graph URLs. Facebook and other scrapers
+# resolve link previews from these, so they cannot be relative. Override with
+# the SITE_URL environment variable once a custom domain is in use.
+DEFAULT_SITE_URL = "https://theonej.github.io/parts-master.io"
+# An unset GitHub Actions variable arrives as an empty string rather than being
+# absent, so fall back on falsiness rather than on os.environ.get's default.
+SITE_URL = (os.environ.get("SITE_URL") or DEFAULT_SITE_URL).strip().rstrip("/")
+# Optional absolute URL of a preview image used in link cards.
+OG_IMAGE = os.environ.get("OG_IMAGE", "").strip()
 TAGLINE = (
     "Field notes on high-end coffee bar design, espresso machine installation "
     "and service. Written from behind the bar and under the panels — "
@@ -199,18 +208,57 @@ def render_markdown(body: str) -> str:
     )
 
 
-def layout(*, title: str, description: str, body: str, depth: int) -> str:
-    """Wrap page content in the shared shell. depth = directories below root."""
+def layout(
+    *,
+    title: str,
+    description: str,
+    body: str,
+    depth: int,
+    path: str = "",
+    og_type: str = "website",
+    published: dt.date | None = None,
+    og_title: str | None = None,
+) -> str:
+    """Wrap page content in the shared shell.
+
+    depth = directories below root, for relative asset links.
+    path   = this page's location below the site root, for absolute URLs.
+    """
     up = "../" * depth
+    canonical = f"{SITE_URL}/{path}" if path else f"{SITE_URL}/"
+    esc = lambda s: html.escape(s, quote=True)
+
+    image_tags = ""
+    if OG_IMAGE:
+        image_tags = f"""
+    <meta property="og:image" content="{esc(OG_IMAGE)}" />
+    <meta name="twitter:card" content="summary_large_image" />"""
+    else:
+        image_tags = """
+    <meta name="twitter:card" content="summary" />"""
+
+    article_tags = ""
+    if published is not None:
+        article_tags = (
+            f'\n    <meta property="article:published_time" '
+            f'content="{published:%Y-%m-%d}" />'
+        )
+
     return f"""<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{html.escape(title)}</title>
-    <meta name="description" content="{html.escape(description, quote=True)}" />
+    <meta name="description" content="{esc(description)}" />
+    <link rel="canonical" href="{esc(canonical)}" />
+    <meta property="og:site_name" content="{esc(SITE_TITLE)}" />
+    <meta property="og:type" content="{esc(og_type)}" />
+    <meta property="og:title" content="{esc(og_title or title)}" />
+    <meta property="og:description" content="{esc(description)}" />
+    <meta property="og:url" content="{esc(canonical)}" />{article_tags}{image_tags}
     <link rel="stylesheet" href="{up}styles.css" />
-    <link rel="icon" href="{html.escape(FAVICON, quote=True)}" />
+    <link rel="icon" href="{esc(FAVICON, )}" />
   </head>
   <body>
     <div class="wrap">
@@ -266,6 +314,11 @@ def render_post(post: dict, newer: dict | None, older: dict | None) -> str:
         description=post["description"],
         body=body,
         depth=1,
+        path=f'blog/{post["slug"]}.html',
+        og_type="article",
+        published=post["date"],
+        # Link cards show og:site_name separately, so the suffix is redundant.
+        og_title=post["title"],
     )
 
 
@@ -308,7 +361,7 @@ def render_index(published: list[dict], pending: int) -> str:
       </footer>"""
 
     return layout(
-        title=SITE_TITLE, description=TAGLINE, body=body, depth=0
+        title=SITE_TITLE, description=TAGLINE, body=body, depth=0, path=""
     )
 
 

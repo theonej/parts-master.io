@@ -160,6 +160,94 @@ and pressure (Mar) → bar design and installation engineering (Apr) → diagnos
 and fault-finding (May) → service business and compliance (Jun) → extraction
 science and dial-in (Jul).
 
+## Facebook announcements
+
+Every post that goes live is announced to a Facebook Page by the `announce`
+job, which runs **only after a successful deploy** so the link cannot 404.
+
+### Setup
+
+1. **You need a Facebook Page.** Meta removed the ability to publish to
+   personal profiles via the Graph API, so a Page is the only option.
+
+2. **Create a Meta app** at developers.facebook.com and add the Pages API
+   product.
+
+3. **Generate a long-lived Page access token** with the `pages_manage_posts`
+   and `pages_read_engagement` permissions. Short-lived tokens expire in about
+   an hour; exchange for a long-lived user token, then request the Page token
+   from it. Verify with the Access Token Debugger that it says
+   `Expires: Never` and is a **Page** token, not a user token.
+
+4. **Add repository secrets** — Settings → Secrets and variables → Actions:
+
+   | Secret | Value |
+   | --- | --- |
+   | `FB_PAGE_ID` | Numeric Page id |
+   | `FB_PAGE_ACCESS_TOKEN` | Long-lived Page access token |
+
+5. **Optional repository variables:**
+
+   | Variable | Purpose |
+   | --- | --- |
+   | `SITE_URL` | Absolute site base. Set when a custom domain is live. |
+   | `OG_IMAGE` | Absolute URL of a link-card image. |
+   | `FB_API_VERSION` | Graph API version. Defaults to `v21.0`. |
+
+6. **Seed the ledger before enabling**, or the next run will announce recent
+   back-catalogue posts:
+
+   ```sh
+   .venv/bin/python tools/announce.py --seed
+   ```
+
+   Then commit `content/announced.json`.
+
+Until the secrets exist the job runs, reports that it is skipping, and exits
+successfully — it never fails the deploy.
+
+### Why it cannot double-post
+
+The workflow runs on every push *and* daily on cron, so the same post is
+evaluated many times. `content/announced.json` records every slug that has
+been announced, with its Facebook post id, and is committed back to `develop`
+by the job. Anything already in it is skipped.
+
+Two further guards limit the damage if that ledger is ever lost or reset:
+
+- `--max-age-days` (default 2) ignores posts published longer ago than that,
+  so a reset ledger cannot republish the whole archive.
+- `--max` (default 5) caps posts per run.
+
+The ledger is saved after **each** successful post, so a failure partway
+through a batch cannot cause the earlier ones to be sent again.
+
+The commit is made with `GITHUB_TOKEN`, and commits made with that token do
+not trigger workflows, so writing the ledger cannot cause a loop. The message
+also carries `[skip ci]`.
+
+### Testing without posting
+
+```sh
+.venv/bin/python tools/announce.py --dry-run      # print what would be sent
+.venv/bin/python tools/announce.py --seed         # mark done, post nothing
+```
+
+### Permissions note
+
+The `announce` job is the only one granted `contents: write`, and only so it
+can commit the ledger. The workflow default remains `contents: read`.
+
+### Open Graph
+
+Post pages emit `og:title`, `og:description`, `og:url`, `og:type=article`,
+`article:published_time` and a canonical link, so the Facebook link card
+renders properly rather than as a bare URL. Set the `OG_IMAGE` variable to get
+a large image card instead of a small one.
+
+Graph API versions are deprecated roughly every two years. When `v21.0` is
+retired, set the `FB_API_VERSION` variable rather than editing the script.
+
 ## Custom domain
 
 The site is served from the default Pages URL. To move it to `parts-master.io`:
